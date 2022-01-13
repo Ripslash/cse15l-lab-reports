@@ -28,3 +28,6 @@ code block? pog?
 > Blockquote
 
 [Title for the link to a cute frog photo](https://cdn.discordapp.com/attachments/695817127516569600/930542128394809385/IMG_8883.png)
+
+
+![Froggy is here for you now](https://cdn.discordapp.com/attachments/695817127516569600/930542128394809385/IMG_8883.png)
