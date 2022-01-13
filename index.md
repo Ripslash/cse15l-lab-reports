@@ -12,3 +12,17 @@ and also woggy
 ```
 code block? pog?
 ```
+
+1) number
+2) number
+3) number
+
+* bullet 1
+* bullet 2
+* another one
+
+`inlaid code` 
+
+
+
+> Blockquote
