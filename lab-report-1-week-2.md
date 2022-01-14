@@ -8,7 +8,7 @@ Download VSCode. Super easy first step, you just have to go to
 
 
 After finishing the download process and opening up VSCode, you should see an environment similar to this
-![The Environment](/cse15l-lab-reports/img/BASE_VSCODE.PNG)
+![The Environment](cse15l-lab-reports/img/BASE_VSCODE.PNG)
 
 [Lab Report 1](lab-report-1-week-2.html)
 
