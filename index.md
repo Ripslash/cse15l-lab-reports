@@ -1,12 +1,14 @@
- This is hella some placement text. Poggy
-and also woggy
-
-
 
 # Header one!
+This is hella some placement text. Poggy
+
+and also woggy
+
+I didn't realize that *Github* only adds a space if there are **two** spaces???
 ## Header Two!
 
 *Italic*
+
 **bold**
 
 ```
@@ -23,9 +25,10 @@ code block? pog?
 
 `inlaid code` 
 
+spaghetti in my leggies.
 
 
-> Blockquote
+> Blockquote 
 
 [Title for the link to a cute frog photo](https://cdn.discordapp.com/attachments/695817127516569600/930542128394809385/IMG_8883.png)
 
