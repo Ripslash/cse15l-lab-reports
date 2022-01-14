@@ -15,6 +15,10 @@ I didn't realize that *Github* only adds a space if there are **two** spaces???
 code block? pog?
 ```
 
+This Link will take you to my sick nasty blog post about week 2's lab report
+[Lab Report 1](https://ripslash.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+
+
 1) number
 2) number
 3) number
