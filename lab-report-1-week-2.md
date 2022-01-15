@@ -66,10 +66,29 @@ It should ask you for your password again, then if you log back in to the server
 
 Yay! Copying the file worked. Now we deal with the huge pain that is your password. Typing in the password every time you want to move a file or get into the system is a huge pain, so we are going to create something called an SSH key. 
 
-/*
+
 ### **Step 4:** SSH Keys and optimization 
-The section about setting up an ssh key 
-*/
+The section about setting up an ssh key.
+
+Okay, to be perfectly straight, this sucks on a windows computer. There was a long and painful process of setting this up, and I honestly don't remember how to do it. So, instead, I'm going to explain how it would work on a Linux Computer.
+
+First, type,
+```
+ssh-keygen
+```
+
+Then hit enter on all of the other stuff, it doesn't matter for this.
+Then, go onto the server itself, create a directory called .ssh through `mkdir`, and logout.
+
+Then, copy this command, substituting your own personal info
+```
+scp /Classpath to .ssh on local device/.ssh/id_rsa.pub cs15lwi22aun@ieng6.ucsd.edu:~/.ssh/authorized_keys
+```
+
+and then you should be good!
+
+It'll look like this:
+
 
 ![Post-Optimization](img/ssh-without-password-lab1.PNG)
 
@@ -78,5 +97,21 @@ The section about setting up an ssh key
 After you've set up your key, then you can get into the realm of optimizing!
 
 
-You can write code after your command line ssh 
+You can write code after your command line ssh to have it run immediately.
+
+
+```
+ssh cs15lwi22aun@ieng6.ucsd.edu "javac filename.java; java filename"
+```
+
+So, using a semicolon inbetween commands will run both commands on the same line, and having the quotes means that it wont break
+
+For example, this doesn't do what you think it does. 
+```
+ssh cs15lwi22aun@ieng6.ucsd.edu javac filename.java; java filename
+```
+This will compile the file in the server, but will run in clientside, as the semicolon will have a new command. The quotes will keep the commands in one group so they'll all run remotely.
+
+![Like this!](img/ssh-calling-whereami.PNG)
+
 
