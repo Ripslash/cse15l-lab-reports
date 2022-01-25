@@ -127,5 +127,6 @@ Once you've set this up, you can update the file on the server with supreme ease
 
  2 keytrokes for Ctrl C, 2 for Ctrl V, one for enter. Cleans this up at 5 keystrokes max!
 
- 
+Given that having to retype the equation takes tons of time, having both the SSH key and an easy command to copy paste can make updating changes almost irrelevant to updating code!
+
 
