@@ -97,7 +97,9 @@ It'll look like this:
 After you've set up your key, then you can get into the realm of optimizing!
 
 
+
 You can write code after your command line ssh to have it run immediately.
+
 
 
 ```
@@ -107,6 +109,7 @@ ssh cs15lwi22aun@ieng6.ucsd.edu "javac filename.java; java filename"
 So, using a semicolon inbetween commands will run both commands on the same line, and having the quotes means that it wont break
 
 For example, this doesn't do what you think it does. 
+
 ```
 ssh cs15lwi22aun@ieng6.ucsd.edu javac filename.java; java filename
 ```
@@ -114,4 +117,15 @@ This will compile the file in the server, but will run in clientside, as the sem
 
 ![Like this!](img/ssh-calling-whereami.PNG)
 
+Once you've set this up, you can update the file on the server with supreme ease. In fact, let's count keystrokes.
+
+
+ 1) write the command out for the first time, including javac and java in quotes
+ 2) press up every time you want to redo the command.
+
+ This means that you only have to type out the command once. And if you want to make it even faster, you can copy the file from a text document for even less steps. 
+
+ 2 keytrokes for Ctrl C, 2 for Ctrl V, one for enter. Cleans this up at 5 keystrokes max!
+
+ 
 
