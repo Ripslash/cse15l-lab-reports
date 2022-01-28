@@ -1,17 +1,3 @@
-Nothing is here yet!
-
-Create another page in your lab report repository, like you did for lab report 1, and write your report there.
-
-Pick three code changes that your group worked on in labs 3 and 4 in order to fix a bug; these should be stored as commits on someone’s repository. Fork the repository so you have your own copy with all the work your group did if you haven’t already.
-
-For each of the three code changes:
-
-Show a screenshot of the code change diff from Github (a page like this)
-Link to the test file for a failure-inducing input that prompted you to make that change
-Show the symptom of that failure-inducing input by showing the output of running the file at the command line for the version where it was failing (this should also be in the commit message history)
-Write 2-3 sentences describing the relationship between the bug, the symptom, and the failure-inducing input.
-You will submit this to the week 4 lab report assignment on Gradescope, which will have a similar process to the first lab report for grading.
-
 
 ## Code change #1
 
@@ -33,12 +19,31 @@ the accused file, which sucessfully broke it. The actual solution to this proble
 
 
 
+
+
 ## Code change 2
 
 
 ![bad pictures](img\badfileresult2.png)
 
+Next, we had this less than fun break. 
 
-Need the while loop to fix this!
+[This](https://github.com/fantasticfishman/markdown-parse/commit/5c75bdd0f93c274757cfc52fb43b521f0a53cd9c)
+file was confusing the parser, so that it would add [k!] into the link itself, causing an issue. The solution was to create an if statement looking for "(" after we had found one, and if we found another, to set that as the new open parenthese.
 
-[this](https://github.com/fantasticfishman/markdown-parse/commit/5c75bdd0f93c274757cfc52fb43b521f0a53cd9c)
+![fixed picture](img\fixedfile7.png)
+
+
+
+## Code change 3
+
+![bad image](img\badfileresulttest4.png)
+
+The final bug I had to fix was a bug where the code wouldn't correctly find the link. More specifically, putting any text between a ")" and a "[" would normally break the link, but with the parser it didn't matter. 
+
+[This file](https://github.com/Ripslash/markdown-parse/blob/main/test-file(4).md)
+caused the problem, but thankfully I was able to fix it with the code below
+
+![the fixed image](img\fixedfile5.png)
+
+The code adds a statement that if the next "(" wasn't immediately after a "]", it should look for a new link starting at the "]". This means that having text between the "]" and "(" wouldn't break the program anymore
