@@ -13,6 +13,10 @@ with this markdown parses was that we were able to easily confuse it, making it 
 [This](https://github.com/fighterkabir/markdown-parse/commit/0e05f82551ef8c36d66acbe3d82309b472dfdd9d) 
 the accused file, which sucessfully broke it. The actual solution to this problem was fairly simple, we just added a loop that checked for "https" before a link, and included that. 
 
+Before the fix, the code would be confused at the excessive open and closed parenthses, resulting in the added link of "[(((((((((((". The solution to said problem was to check for "https" beforehand, because that would make sure that only actual links (ie. not gibberish) would be included into the list of links
+
+
+
 ![This bad boy](img\failedtestfile.png)
 
 
