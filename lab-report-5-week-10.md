@@ -8,21 +8,43 @@ differences in the error occurs. Then, I could go into the two documents
 with the results to find the specific file, then I could go into
 the file to find the specific test that broke.
 
+### Test File # 22
 
-test file # 22
-[foo](/bar\* "ti\*tle")
+The markdown file was this
+```
+ [foo](/bar\* "ti\*tle")
+```
 
-My Code: [/bar\* "ti\tle"]
+My Code was this,
+```
+ [/bar\* "ti\tle"]
+```
+and theirs was this:
+```
 Their Code: []
+```
+
+Clearly the given code is correct, as a URL with a backslash shouldn't be counted.
+So, the main problem is that my code doesn't account for backslashes at all, which
+is a pretty big problem when the thing preventing this code from working is a backslash. 
 
 
-and also
+### Test File # 578
 
+The markdown file was this
 
-test file # 578
+```
 My ![foo bar](/path/to/train.jpg  "title"   )
+```
 
-My Code: [/path/to/train.jpg "title"   ]
-Thier Code: []
+My Code was this,
+```
+ [/path/to/train.jpg "title"   ]
+ ```
+and theirs was this:
+```
+Their Code: []
+```
 
+Theirs is correct once again, but for a different reason. My code doesn't factor in images, or at least an exclamation point before a URL link. It stats as a fairly simple problem to solve but ends up getting really complex at the end. 
 
