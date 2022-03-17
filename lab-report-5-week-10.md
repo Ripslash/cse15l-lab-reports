@@ -28,6 +28,10 @@ Clearly the given code is correct, as a URL with a backslash shouldn't be counte
 So, the main problem is that my code doesn't account for backslashes at all, which
 is a pretty big problem when the thing preventing this code from working is a backslash. 
 
+As you can see here in my code, there is no checker for a backlash, and that is why it broke
+![the code](img\codeToFix.png)
+
+
 
 ### Test File # 578
 
@@ -48,3 +52,8 @@ Their Code: []
 
 Theirs is correct once again, but for a different reason. My code doesn't factor in images, or at least an exclamation point before a URL link. It stats as a fairly simple problem to solve but ends up getting really complex at the end. 
 
+As you can see here in my code, there is no checker for an exclamation point, and that is why it broke
+![the code](img\codeToFix.png)
+
+
+Yes, its the same picture. No one responded to my issue comment on github! 
